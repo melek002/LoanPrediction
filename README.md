@@ -47,7 +47,7 @@ The dataset includes features like:
 ├── README.md
 ├── requirements.txt
 ```
-##✨ Features
+## ✨ Features
 📄 Dynamic form to collect applicant information
 
 📈 Real-time loan approval prediction based on trained ML model
@@ -58,7 +58,7 @@ The dataset includes features like:
 
 📦 Full pipeline saved and deployed easily
 
-##🔥 How to Run Locally
+## 🔥 How to Run Locally
 1. Backend (Flask)
  ```bash
 cd backend
