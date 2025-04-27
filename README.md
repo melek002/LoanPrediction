@@ -60,20 +60,19 @@ The dataset includes features like:
 
 ##🔥 How to Run Locally
 1. Backend (Flask)
-bash
-Copy
-Edit
+ ```
 cd backend
 pip install -r requirements.txt
 python app.py
+```
 Backend will run on ➔ http://127.0.0.1:5000
 
 2. Frontend (React + Vite)
-
-```cd frontend
+```
+cd frontend
 npm install
 npm run dev
-```bash
+```
 Frontend will run on ➔ http://localhost:5173
 
 ##📦 Model Training Summary
