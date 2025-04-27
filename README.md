@@ -46,6 +46,7 @@ The dataset includes features like:
 │   ├── public/
 ├── README.md
 ├── requirements.txt
+```
 ✨ Features
 📄 Dynamic form to collect applicant information
 
