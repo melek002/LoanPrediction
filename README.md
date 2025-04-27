@@ -69,11 +69,11 @@ python app.py
 Backend will run on ➔ http://127.0.0.1:5000
 
 2. Frontend (React + Vite)
-bash
-cd frontend
+
+```cd frontend
 npm install
 npm run dev
-bash
+```bash
 Frontend will run on ➔ http://localhost:5173
 
 ##📦 Model Training Summary
