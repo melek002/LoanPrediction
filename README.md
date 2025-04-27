@@ -75,39 +75,44 @@ npm run dev
 ```
 Frontend will run on ➔ http://localhost:5173
 
-##📦 Model Training Summary
-Scaling numerical features with StandardScaler
+## 🔁 Model Performance Comparison: Before vs After Normalization
 
-Encoding categorical features with OneHotEncoder
+### ✅ Summary Table
 
-Comparing multiple ML models:
+| Model                  | Accuracy (Before) | Accuracy (After) | Precision (Before) | Precision (After) | False Negatives (Before → After) |
+|------------------------|------------------|------------------|---------------------|--------------------|-----------------------------------|
+| **Linear Regression**  | 0.8926            | 0.8926           | 0.798               | 0.798              | 622 → 622                         |
+| **Logistic Regression**| 0.8820            | 0.8923           | 0.735               | 0.765              | 539 → 515 ✅                       |
+| **Random Forest**      | 0.9309            | 0.9307           | 0.900               | 0.899              | 452 → 452                         |
+| **KNN (Tuned)**        | 0.8360            | 0.9002 🔥        | 0.689               | 0.827              | 1054 → 609 🔥                     |
+| **XGBoost**            | 0.9362            | 0.9362           | 0.889               | 0.889              | 372 → 372                         |
 
-Logistic Regression
+---
 
-Random Forest
+### 🧠 Observations
 
-K-Nearest Neighbors (KNN)
+- 🔥 **K-Nearest Neighbors (KNN)** showed the **most significant improvement**:
+  - Accuracy jumped by **6.4%**
+  - False Negatives dropped by nearly **450 cases**
+  - Precision rose from **68.9% → 82.7%**
 
-XGBoost
+- ✅ **Logistic Regression** also benefited from normalization, improving across all key metrics.
 
-Final pipeline saved as loan_pipeline.pkl
+- 🧱 **Random Forest** and ⚡ **XGBoost** remained highly stable — expected behavior due to their **scale-invariance**.
 
-##📈 Final Model Metrics (Best Model - KNN Tuned)
+- 📉 **Linear Regression (converted)** showed no change, as expected.
 
-Metric	Score
-Accuracy	~90%
-Precision	~82%
-Recall	~69%
-F1 Score	~75%
-🌟 Future Improvements
-🎯 Add email notification system
+---
 
-🎯 Store loan applications history in a database
+### 🏆 Final Recommendations
 
-🎯 User authentication (Sign Up / Login)
+| Goal                     | Best Model             |
+|--------------------------|------------------------|
+| **Minimize False Negatives** | 🔥 KNN (normalized)       |
+| **Maximize Accuracy + Precision** | ⚡ XGBoost / 🌲 Random Forest |
+| **Balance + Interpretability** | ✅ Logistic Regression    |
 
-🎯 Full deployment (Flask + React together) using Render / Vercel
-
+---
 ##🙏 Acknowledgements
 Scikit-learn for amazing Machine Learning libraries
 
