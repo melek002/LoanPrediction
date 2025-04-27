@@ -113,7 +113,7 @@ Frontend will run on ➔ http://localhost:5173
 | **Balance + Interpretability** | ✅ Logistic Regression    |
 
 ---
-##📚 References & Credits
+## 📚 References & Credits
 Dataset: Based on a dataset introduced in a Medium article on Loan Prediction.
 Machine Learning Guidance:
 Scikit-learn Official Documentation
