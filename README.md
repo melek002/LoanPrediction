@@ -114,13 +114,11 @@ Frontend will run on ➔ http://localhost:5173
 
 ---
 ## 📚 References & Credits
-Dataset: Based on a dataset introduced in a Medium article on Loan Prediction.
 
-Machine Learning Guidance:
+- **Dataset:** Based on a dataset introduced in a Medium article on Loan Prediction.
+- **Machine Learning Guidance:**  
+  - Scikit-learn Official Documentation  
+  - ChatGPT AI Assistance
+- **UI/UX Design:** Inspired by **Bolt AI** (Vite + TailwindCSS + React)
+- **Backend Framework:** Built with **Flask** (Python)
 
-Scikit-learn Official Documentation
-ChatGPT AI Assistance
-
-UI/UX Design: Bolt Ai (Vite + TailwindCSS + React)
-
-Backend Framework: Built with Flask 
