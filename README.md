@@ -1,7 +1,7 @@
 # 🏦 Loan Approval Prediction System
 
 Welcome to the **Loan Approval Prediction** project!  
-This application allows users to submit personal and financial information to predict whether a loan will likely be **approved** or **rejected**, using a Machine Learning model.
+This application allows users to submit personal and financial information to predict, using a machine learning model, whether a loan will likely be **approved** or **rejected**.
 
 ---
 
@@ -118,7 +118,7 @@ Frontend will run on ➔ http://localhost:5173
 - **Dataset:** Based on a dataset introduced in a Medium article on Loan Prediction.
 - **Machine Learning Guidance:**  
   - Scikit-learn Official Documentation  
-  - ChatGPT AI Assistance
-- **UI/UX Design:** Inspired by **Bolt AI** (Vite + TailwindCSS + React)
+  - ChatGPT 
+- **Design:** **Bolt AI** (Vite + TailwindCSS + React)
 - **Backend Framework:** Built with **Flask** (Python)
 
