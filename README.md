@@ -46,3 +46,76 @@ The dataset includes features like:
 │   ├── public/
 ├── README.md
 ├── requirements.txt
+✨ Features
+📄 Dynamic form to collect applicant information
+
+📈 Real-time loan approval prediction based on trained ML model
+
+🎨 Modern UI using TailwindCSS and TypeScript
+
+⚡ Fast and secure API communication between React and Flask
+
+📦 Full pipeline saved and deployed easily
+
+🔥 How to Run Locally
+1. Backend (Flask)
+bash
+Copy
+Edit
+cd backend
+pip install -r requirements.txt
+python app.py
+Backend will run on ➔ http://127.0.0.1:5000
+
+2. Frontend (React + Vite)
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm run dev
+Frontend will run on ➔ http://localhost:5173
+
+📦 Model Training Summary
+Scaling numerical features with StandardScaler
+
+Encoding categorical features with OneHotEncoder
+
+Comparing multiple ML models:
+
+Logistic Regression
+
+Random Forest
+
+K-Nearest Neighbors (KNN)
+
+XGBoost
+
+Final pipeline saved as loan_pipeline.pkl
+
+📈 Final Model Metrics (Best Model - KNN Tuned)
+
+Metric	Score
+Accuracy	~90%
+Precision	~82%
+Recall	~69%
+F1 Score	~75%
+🌟 Future Improvements
+🎯 Add email notification system
+
+🎯 Store loan applications history in a database
+
+🎯 User authentication (Sign Up / Login)
+
+🎯 Full deployment (Flask + React together) using Render / Vercel
+
+🙏 Acknowledgements
+Special thanks to:
+
+Scikit-learn for amazing Machine Learning libraries
+
+XGBoost for powerful boosting algorithms
+
+React & Vite teams for modern web development
+
+Flask for lightweight APIs
