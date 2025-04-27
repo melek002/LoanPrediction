@@ -60,7 +60,7 @@ The dataset includes features like:
 
 ##🔥 How to Run Locally
 1. Backend (Flask)
- ```
+ ```bash
 cd backend
 pip install -r requirements.txt
 python app.py
@@ -68,7 +68,7 @@ python app.py
 Backend will run on ➔ http://127.0.0.1:5000
 
 2. Frontend (React + Vite)
-```
+```bash
 cd frontend
 npm install
 npm run dev
