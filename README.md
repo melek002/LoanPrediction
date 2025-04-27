@@ -33,11 +33,10 @@ The dataset includes features like:
 ## 🛠️ Project Structure
 
 ```plaintext
-/loan-approval-prediction
-├── backend/ (Flask API)
+/loan
 │   ├── app.py
 │   ├── loan_pipeline.pkl
-├── frontend/ (React App)
+├── templates/ (React App)
 │   ├── src/
 │   │   ├── components/
 │   │   ├── context/
@@ -61,7 +60,7 @@ The dataset includes features like:
 ## 🔥 How to Run Locally
 1. Backend (Flask)
  ```bash
-cd backend
+cd loan
 pip install -r requirements.txt
 python app.py
 ```
@@ -69,7 +68,7 @@ Backend will run on ➔ http://127.0.0.1:5000
 
 2. Frontend (React + Vite)
 ```bash
-cd frontend
+cd tempaltes
 npm install
 npm run dev
 ```
