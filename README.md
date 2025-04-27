@@ -47,7 +47,7 @@ The dataset includes features like:
 ├── README.md
 ├── requirements.txt
 ```
-✨ Features
+##✨ Features
 📄 Dynamic form to collect applicant information
 
 📈 Real-time loan approval prediction based on trained ML model
@@ -58,7 +58,7 @@ The dataset includes features like:
 
 📦 Full pipeline saved and deployed easily
 
-🔥 How to Run Locally
+##🔥 How to Run Locally
 1. Backend (Flask)
 bash
 Copy
@@ -77,7 +77,7 @@ npm install
 npm run dev
 Frontend will run on ➔ http://localhost:5173
 
-📦 Model Training Summary
+##📦 Model Training Summary
 Scaling numerical features with StandardScaler
 
 Encoding categorical features with OneHotEncoder
@@ -94,7 +94,7 @@ XGBoost
 
 Final pipeline saved as loan_pipeline.pkl
 
-📈 Final Model Metrics (Best Model - KNN Tuned)
+##📈 Final Model Metrics (Best Model - KNN Tuned)
 
 Metric	Score
 Accuracy	~90%
@@ -110,9 +110,7 @@ F1 Score	~75%
 
 🎯 Full deployment (Flask + React together) using Render / Vercel
 
-🙏 Acknowledgements
-Special thanks to:
-
+##🙏 Acknowledgements
 Scikit-learn for amazing Machine Learning libraries
 
 XGBoost for powerful boosting algorithms
