@@ -113,11 +113,10 @@ Frontend will run on ➔ http://localhost:5173
 | **Balance + Interpretability** | ✅ Logistic Regression    |
 
 ---
-##🙏 Acknowledgements
-Scikit-learn for amazing Machine Learning libraries
-
-XGBoost for powerful boosting algorithms
-
-React & Vite teams for modern web development
-
-Flask for lightweight APIs
+##📚 References & Credits
+Dataset: Based on a dataset introduced in a Medium article on Loan Prediction.
+Machine Learning Guidance:
+Scikit-learn Official Documentation
+ChatGPT AI Assistance
+UI/UX Design: Bolt Ai (Vite + TailwindCSS + React)
+Backend Framework: Built with Flask 
