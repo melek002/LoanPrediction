@@ -6,65 +6,66 @@
 </head>
 <body>
     <h2>Loan Application Form</h2>
+<form action="/predict" method="post">
 
-    <form action="/predict" method="post">
+    <!-- Gender -->
+    Gender:
+    <select name="person_gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br>
 
-        <!-- Dropdown for Gender -->
-        Gender:
-        <select name="person_gender">
-            <option value="male">male</option>
-            <option value="FEMALE">FEMALE</option>
-        </select><br><br>
+    <!-- Education -->
+    Education:
+    <select name="person_education">
+        <option value="High School">High School</option>
+        <option value="Associate">Associate</option>
+        <option value="Bachelor">Bachelor</option>
+        <option value="Master">Master</option>
+        <option value="Doctorate">Doctor</option>
+        <option value="Other">Other</option>
+    </select><br><br>
 
-        <!-- Dropdown for Education -->
-        Education:
-        <select name="person_education">
-            <option value="High School">HIGH SCHOOL</option>
-            <option value="BACHELOR">BACHELOR</option>
-            <option value="MASTER">MASTER</option>
-            <option value="DOCTOR">DOCTOR</option>
-            <option value="OTHER">OTHER</option>
-        </select><br><br>
+    <!-- Home Ownership -->
+    Home Ownership:
+    <select name="person_home_ownership">
+        <option value="RENT">RENT</option>
+        <option value="MORTGAGE">MORTGAGE</option>
+        <option value="OWN">OWN</option>
+        <option value="OTHER">OTHER</option>
+    </select><br><br>
 
-        <!-- Dropdown for Home Ownership -->
-        Home Ownership:
-        <select name="person_home_ownership">
-            <option value="RENT">RENT</option>
-            <option value="OWN">OWN</option>
-            <option value="MORTGAGE">MORTGAGE</option>
-            <option value="OTHER">OTHER</option>
-        </select><br><br>
+    <!-- Loan Intent -->
+    Loan Intent:
+    <select name="loan_intent">
+        <option value="PERSONAL">Personal</option>
+        <option value="EDUCATION">Education</option>
+        <option value="MEDICAL">Medical</option>
+        <option value="HOMEIMPROVEMENT">Home Improvement</option>
+        <option value="VENTURE">Venture</option>
+        <option value="DEBTCONSOLIDATION">Debt Consolidation</option>
+    </select><br><br>
 
-        <!-- Dropdown for Loan Intent -->
-        Loan Intent:
-        <select name="loan_intent">
-            <option value="PERSONAL">PERSONAL</option>
-            <option value="EDUCATION">EDUCATION</option>
-            <option value="HOME IMPROVEMENT">HOME IMPROVEMENT</option>
-            <option value="DEBT CONSOLIDATION">DEBT CONSOLIDATION</option>
-            <option value="VENTURE">VENTURE</option>
-            <option value="MEDICAL">MEDICAL</option>
-        </select><br><br>
+    <!-- Previous Loan Default -->
+    Previous Loan Default:
+    <select name="previous_loan_defaults_on_file">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select><br><br>
 
-         <!-- Dropdown for Previous Loan Default -->
-         Previous Loan Default:
-         <select name="previous_loan_defaults_on_file">
-             <option value="Yes">Yes</option>
-             <option value="No">No</option>
-         </select><br><br>
- 
-         <!-- Numerical Inputs -->
-         Age: <input type="text" name="person_age"><br><br>
-         Income: <input type="text" name="person_income"><br><br>
-         Employment Experience: <input type="text" name="person_emp_exp"><br><br>
-         Loan Amount: <input type="text" name="loan_amnt"><br><br>
-         Interest Rate: <input type="text" name="loan_int_rate"><br><br>
-         Loan % Income: <input type="text" name="loan_percent_income"><br><br>
-         Credit History Length: <input type="text" name="cb_person_cred_hist_length"><br><br>
-         Credit Score: <input type="text" name="credit_score"><br><br>
- 
-         <input type="submit" value="Predict">
-     </form>
+    <!-- Numerical Inputs -->
+    Age: <input type="text" name="person_age"><br><br>
+    Income: <input type="text" name="person_income"><br><br>
+    Employment Experience: <input type="text" name="person_emp_exp"><br><br>
+    Loan Amount: <input type="text" name="loan_amnt"><br><br>
+    Interest Rate: <input type="text" name="loan_int_rate"><br><br>
+    Loan % Income: <input type="text" name="loan_percent_income"><br><br>
+    Credit History Length: <input type="text" name="cb_person_cred_hist_length"><br><br>
+    Credit Score: <input type="text" name="credit_score"><br><br>
+
+    <input type="submit" value="Predict">
+</form>
+
  
      {% if prediction_text %}
          <h3>{{ prediction_text }}</h3>

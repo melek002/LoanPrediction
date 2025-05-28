@@ -107,7 +107,7 @@ const LoanApplicationForm: React.FC = () => {
                 options={[
                   { value: "", label: "Select gender" },
                   { value: "male", label: "male" },
-                  { value: "Female", label: "Female" },
+                  { value: "female", label: "Female" },
                   { value: "Other", label: "Other" }
                 ]}
               />
@@ -131,7 +131,6 @@ const LoanApplicationForm: React.FC = () => {
                   { value: "High School", label: "High School" },
                   { value: "Bachelor", label: "Bachelor's Degree" },
                   { value: "Master", label: "Master's Degree" },
-                  { value: "PhD", label: "PhD" }
                 ]}
               />
               <SelectField

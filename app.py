@@ -1,18 +1,48 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS  # <-- ✨ Add this
+from flask_cors import CORS
 import joblib
 import pandas as pd
+import pyodbc  # 🔑 For SQL Server
 
 app = Flask(__name__)
-CORS(app)  # <-- ✨ Add this too
+CORS(app)
 
-# Load your trained pipeline
+# Load trained model pipeline
 pipeline = joblib.load('loan_pipeline.pkl')
 
+# Database connection string
+conn_str = (
+    'DRIVER={ODBC Driver 17 for SQL Server};'
+    'SERVER=localhost;'
+    'DATABASE=Accounts;'  # <-- 🔁 Replace with your actual DB name
+    'UID=sa;'
+    'PWD=melekmelek;'
+)
+
+# 🔐 Login endpoint
+@app.route('/api/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    username = data.get('username')
+    password = data.get('password')
+
+    try:
+        with pyodbc.connect(conn_str) as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM Users WHERE username=? AND password=?", (username, password))
+            result = cursor.fetchone()
+            if result:
+                return jsonify({"success": True, "message": "Login successful"})
+            else:
+                return jsonify({"success": False, "message": "Invalid credentials"}), 401
+    except Exception as e:
+        return jsonify({"success": False, "message": str(e)}), 500
+
+# 💡 Prediction endpoint
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        data = request.json  # Get JSON data from React
+        data = request.json
 
         form_data = [
             data['person_gender'],
