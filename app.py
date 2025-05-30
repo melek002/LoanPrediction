@@ -12,9 +12,9 @@ pipeline = joblib.load('loan_pipeline.pkl')
 
 # Database connection string
 conn_str = (
-    'DRIVER={ODBC Driver 17 for SQL Server};'
+    'DRIVER=ODBC;'
     'SERVER=localhost;'
-    'DATABASE=Accounts;'  # <-- 🔁 Replace with your actual DB name
+    'DATABASE=Accounts;'
     'UID=sa;'
     'PWD=melekmelek;'
 )

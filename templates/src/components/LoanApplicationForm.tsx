@@ -194,7 +194,7 @@ const LoanApplicationForm: React.FC = () => {
                 required
                 options={[
                   { value: "", label: "Select loan intent" },
-                  { value: "Home", label: "Home Purchase" },
+                  { value: "HOMEIMPROVEMENT", label: "Home Purchase" },
                   { value: "Education", label: "Education" },
                   { value: "Medical", label: "Medical Expenses" },
                   { value: "Venture", label: "Business Venture" },
